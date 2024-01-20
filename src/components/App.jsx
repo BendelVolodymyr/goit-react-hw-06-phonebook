@@ -12,6 +12,7 @@ export const App = () => {
       <div className={styles.container}>
         <h1>Phonebook</h1>
         <ContactForm />
+        <Filter />
       </div>
       <div className={styles.container}>
         <h2>Contacts</h2>
@@ -19,8 +20,6 @@ export const App = () => {
           <h3>Your phonebook is empty. Add your first contact</h3>
         ) : (
           <>
-            <h3>Your phonebook has {users.length} contacts</h3>
-            <Filter />
             <ContactList />
           </>
         )}
